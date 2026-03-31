@@ -22,25 +22,25 @@ All $\beta$ coefficients for the fixed-effect covariates are **exactly zero**. A
 
 **Design**: Fit `glmer(y ~ X1 + ... + Xp + (1|subject))` for $p \in \{2, 5, 10, ..., 50\}$ noise covariates.
 
-**Expected results**:
+**Actual results**:
 
 | Metric | Behaviour as $p$ increases |
 |--------|---------------------------|
-| **Training accuracy** | Rises above 50% — the model memorises noise patterns in the training clusters |
-| **Test accuracy** | Stays at ~50% — noise patterns don't generalise to held-out subjects |
-| **Marginal R²** | Stays near 0 — correctly reflects that fixed effects explain nothing |
-| **Conditional R²** | Inflated — the random intercept absorbs real between-subject variance, but the model attributes some noise to it too |
+| **Training accuracy** | Rises from ~64% (p=2) to ~72% (p=50) — the model memorises noise patterns in the training clusters |
+| **Test accuracy** | Drifts slightly above 50% to ~58% at p=50, but remains far below training accuracy — noise patterns mostly don't generalise |
+| **Marginal R²** | Rises from ~0.006 to ~0.25 — the model attributes spurious variance to the noise covariates, inflating fixed-effect R² |
+| **Conditional R²** | Rises from ~0.09 to ~0.32 — the gap between marginal and conditional R² persists throughout |
 
-**Key insight**: Unlike neural networks where training accuracy can reach 65%+ with 50 noise features, GLMMs are more constrained because `glmer` uses maximum likelihood with a Laplace approximation — an implicit regulariser. The train/test gap will be smaller but still present. The gap between marginal and conditional R² is the GLMM-specific red flag.
+**Key insight**: GLMMs overfit to noise at least as aggressively as neural networks — training accuracy reaches 72% with 50 pure noise features. The Laplace approximation in `glmer` does not provide meaningful implicit regularisation when $p$ is large relative to $n_{\text{clusters}}$. Marginal R² is *not* immune to inflation: with many noise covariates, the model attributes substantial spurious variance to fixed effects. The train/test gap and inflated R² values are the key red flags.
 
 ### 2. Sample-Size Sweep (03)
 
 **Design**: Fix $p = 25$ noise covariates, vary the number of subjects from 10 to 120.
 
-**Expected results**:
-- **Small $n$ (10–20 subjects)**: Severe overfitting. With 25 covariates and only 200–400 rows, the model has far too many parameters relative to the effective sample size (which is the number of clusters, not rows).
-- **Large $n$ (80–120 subjects)**: Overfitting shrinks. More clusters → better estimation of the zero fixed effects → train/test gap closes toward zero.
-- **Marginal R²** converges to 0 faster with more subjects.
+**Actual results**:
+- **Small $n$ (10–20 subjects)**: Severe overfitting. Train accuracy reaches ~77% (n=10) and ~72% (n=20), while test accuracy stays at ~53–57%. Marginal R² is highly inflated (~0.25 at n=10).
+- **Large $n$ (80–120 subjects)**: Overfitting shrinks. Train accuracy drops to ~61–64%, test accuracy remains at ~52%. The train/test gap narrows from ~24pp to ~12pp.
+- **Marginal R²** drops from ~0.25 (n=10) to ~0.03 (n=120), converging toward zero with more subjects.
 
 **Key insight**: In mixed models, effective sample size is determined by the number of **clusters** (subjects), not the total number of observations. This is the $n_2$ vs $n_1$ distinction that many applied researchers miss.
 
@@ -52,12 +52,12 @@ All $\beta$ coefficients for the fixed-effect covariates are **exactly zero**. A
 - `(1 + X1 + X2 | subject)` — two random slopes
 - `(1 + X1 + X2 + X3 | subject)` — three random slopes (covariance matrix grows as $k(k+1)/2$)
 
-**Expected results**:
-- Richer random-effect structures produce **higher conditional R²** but not higher marginal R².
-- More random slopes → more convergence failures (singular fits, boundary estimates).
+**Actual results**:
+- Richer random-effect structures produce **higher conditional R²** (0.19 → 0.28) and slightly higher marginal R² (0.11 → 0.13), while test accuracy stays flat (~54%) or even decreases marginally. Train accuracy rises from ~67% to ~71%.
+- Convergence degrades severely with complexity: random-intercept only converges 97% of the time, but `rs_X1` drops to 25%, and `rs_X1_X2` and `rs_X1_X2_X3` essentially never converge (0–0.6%).
 - The model is fitting random covariance structure to noise — the mixed-model analogue of adding hidden layers to a neural network.
 
-**Key insight**: "Maximal random effects" (Barr et al., 2013) is only justified when the design actually supports it. On pure noise, maximal models don't improve prediction — they just overfit the variance components.
+**Key insight**: "Maximal random effects" (Barr et al., 2013) is only justified when the design actually supports it. On pure noise, maximal models don't improve prediction — they just overfit the variance components. The near-zero convergence rates for complex random-effect structures are themselves a diagnostic signal that the data cannot support the model.
 
 ### 4. Regularisation Sweep (05)
 
@@ -67,23 +67,24 @@ All $\beta$ coefficients for the fixed-effect covariates are **exactly zero**. A
 - $N(0, 0.5)$ — strong shrinkage
 - $N(0, 0.1)$ — very strong (pushes $\beta$ toward zero)
 
-**Expected results**:
-- **Flat prior**: Behaves like `lme4`, same overfitting pattern.
-- **Strong priors**: Shrink all $\hat{\beta}$ toward zero → training accuracy drops toward 50%, test accuracy stays at 50%, and the train/test gap disappears.
-- Marginal R² under strong priors will be nearly exactly 0.
+**Actual results** (50 seeds per config):
+- **Flat prior $N(0, 10)$**: Failed completely — Stan could not initialise on any of the 50 seeds. With 25 noise covariates and a near-flat prior, the posterior is too diffuse for the sampler to find a starting point.
+- **Moderate $N(0, 1)$, strong $N(0, 0.5)$, very strong $N(0, 0.1)$**: All three produced similar train accuracy (~67.5%) and test accuracy (~53%). The train/test gap persisted across all prior strengths.
+- Marginal R² showed the clearest differentiation: moderate (0.11) → strong (0.11) → very strong (0.03), with the strongest prior successfully shrinking fixed-effect variance toward zero.
 
-**Key insight**: This is the direct analogue of weight decay in neural networks. The prior $N(0, \sigma^2)$ on $\beta$ is mathematically equivalent to an L2 penalty $\lambda \|\beta\|^2$ with $\lambda = 1/(2\sigma^2)$. Stronger prior = more regularisation = less overfitting to noise.
+**Key insight**: The flat prior failure is itself informative — it shows that with many noise covariates, even a Bayesian approach cannot rescue an underidentified model without meaningful regularisation. Among the working priors, shrinkage primarily affects R² rather than accuracy, suggesting that accuracy is a blunt diagnostic. The prior $N(0, \sigma^2)$ on $\beta$ is mathematically equivalent to an L2 penalty $\lambda \|\beta\|^2$ with $\lambda = 1/(2\sigma^2)$.
 
 ### 5. Signal Injection (06)
 
 **Design**: Among 25 total covariates, make $k \in \{0, 1, 2, 5, 10, 15, 25\}$ of them truly informative with $\beta = 0.5$.
 
-**Expected results**:
-- $k = 0$: Pure noise baseline — train/test gap, marginal R² ≈ 0.
-- $k = 1\text{–}2$: Slight improvement in test accuracy, marginal R² begins to rise.
-- $k = 10\text{–}25$: Both train and test accuracy rise substantially. The gap shrinks because the model is learning real signal. Marginal R² rises proportionally.
+**Actual results**:
+- $k = 0$: Pure noise baseline — train ~70%, test ~55%, marginal R² ~0.12. The train/test gap confirms overfitting.
+- $k = 1\text{–}2$: Test accuracy rises to ~58–60%, marginal R² to ~0.19–0.21. The model begins to detect real signal.
+- $k = 5\text{–}10$: Both train and test accuracy rise substantially (test reaches ~68–75%). The train/test gap narrows because the model is learning real signal. Marginal R² rises to 0.39–0.56.
+- $k = 25$: Train ~87%, test ~82%, marginal R² ~0.78. Nearly all variance is explained by real signal, and the gap is minimal.
 
-**Key insight**: This is the sanity check. It proves the simulation framework can detect real effects. If your GLMM can't distinguish $k = 0$ from $k = 10$, something is wrong with the setup, not with the method.
+**Key insight**: This is the sanity check. It proves the simulation framework can detect real effects and that the train/test gap shrinks when signal is present. The smooth monotonic increase in test accuracy and marginal R² with $k$ confirms the framework is well-calibrated.
 
 ---
 

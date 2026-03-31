@@ -35,11 +35,11 @@ The pipeline runs:
 | 06 | `06_signal.R` | Number of informative features (0–25) | `signal_experiment.py` |
 | 07 | `07_visualisation.R` | — | `r_visualization.r` |
 
-Each experiment runs **500 bootstrap seeds** and records:
+Each experiment runs **500 bootstrap seeds** (except 05 which uses 50 due to Stan's computational cost) and records:
 - Training accuracy, test accuracy (cluster-level holdout)
 - Nakagawa marginal R² (fixed effects only)
 - Nakagawa conditional R² (fixed + random effects)
-- AIC and convergence status
+- Convergence status
 
 ## Data Generation
 
@@ -52,14 +52,20 @@ X    ~ N(0, 1)  ← 100 pure noise covariates
 
 30 subjects × 20 observations = 600 rows per dataset. Train/test split at the **subject level** (24 train / 6 test).
 
-## Key Results (Expected)
+## Key Results
 
-| Metric | Under pure noise | With signal |
-|--------|-----------------|-------------|
-| Training accuracy | > 50% (inflated) | > 50% (real) |
-| Test accuracy | ≈ 50% (chance) | > 50% (generalises) |
-| Marginal R² | ≈ 0 | > 0 |
-| Conditional R² | > 0 (inflated) | > marginal R² |
+| Metric | Under pure noise (p=25) | With full signal (k=25) |
+|--------|------------------------|------------------------|
+| Training accuracy | ~67% (inflated) | ~87% (real) |
+| Test accuracy | ~54% (near chance) | ~82% (generalises) |
+| Marginal R² | ~0.11 (spuriously inflated) | ~0.78 |
+| Conditional R² | ~0.19 (inflated) | ~0.80 |
+
+Notable findings:
+- GLMMs overfit aggressively: train accuracy reaches 72% with 50 pure noise covariates
+- Bayesian flat prior N(0,10) fails entirely — Stan cannot initialise with 25 noise features
+- Complex random-effect structures (random slopes) almost never converge on noise data
+- Marginal R² is *not* immune to inflation with many noise covariates
 
 ## Project Structure
 
