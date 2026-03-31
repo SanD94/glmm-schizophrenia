@@ -3,7 +3,7 @@ library(performance)
 library(parallel)
 
 # ── Configuration ──────────────────────────────────────────────────────────────
-N_SEEDS    <- 500
+N_SEEDS    <- 50
 P          <- 25
 N_SUBJ     <- 30
 N_TRAIN    <- 24

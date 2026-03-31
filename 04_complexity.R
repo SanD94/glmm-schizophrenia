@@ -58,7 +58,7 @@ run_one_seed <- function(seed, config_name, re_str, dat) {
                       marginal_R2 = NA, conditional_R2 = NA, converged = FALSE))
   }
 
-  conv <- is.null(fit@optinfo$conv$lme4)
+  conv <- length(fit@optinfo$conv$lme4) == 0
 
   pred_train <- ifelse(predict(fit, train_dat, type = "response") > 0.5, 1, 0)
   train_acc  <- mean(pred_train == train_dat$y)

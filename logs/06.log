@@ -1,0 +1,118 @@
+Loading required package: Matrix
+Running signal sweep: 7 levels × 500 seeds
+[[1]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[2]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[3]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[4]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[5]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[6]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[7]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[8]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[9]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[10]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[11]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[12]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[13]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[14]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[15]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[16]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[17]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[18]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[19]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[20]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[21]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[22]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[23]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[24]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[25]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[26]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+[[27]]
+ [1] "performance" "lme4"        "Matrix"      "stats"       "graphics"   
+ [6] "grDevices"   "utils"       "datasets"    "methods"     "base"       
+
+  n_signal = 0 ... done
+  n_signal = 1 ... done
+  n_signal = 2 ... done
+  n_signal = 5 ... done
+  n_signal = 10 ... done
+  n_signal = 15 ... done
+  n_signal = 25 ... done
+Saved 3500 rows → results/signal_sweep.csv 

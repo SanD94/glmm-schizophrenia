@@ -1,0 +1,514 @@
+Loading required package: Rcpp
+This is rstanarm version 2.32.2
+- See https://mc-stan.org/rstanarm/articles/priors for changes to default priors!
+- Default priors may change, so it's safest to specify priors, even if equivalent to the defaults.
+- For execution on a local, multicore CPU with excess RAM we recommend calling
+  options(mc.cores = parallel::detectCores())
+Running regularisation sweep: 4 configs × 50 seeds
+NOTE: Stan models run sequentially (Stan uses internal parallelism)
+  config = flat ...[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+ seed 50[1] "Error : Initialization failed."
+error occurred during calling the sampler; sampling not done
+Error in check_stanfit(stanfit) : 
+  Invalid stanfit object produced please report bug
+ done
+  config = moderate ...Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+ seed 50Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+ done
+  config = strong ...Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+ seed 50Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+ done
+  config = very_strong ...Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+ seed 50Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+Instead of posterior_linpred(..., transform=TRUE) please call posterior_epred(), which provides equivalent functionality.
+ done
+There were 34 warnings (use warnings() to see them)
+Saved 200 rows → results/regularisation_sweep.csv 

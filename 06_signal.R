@@ -75,7 +75,7 @@ run_one_seed <- function(seed, n_signal, dat) {
                       marginal_R2 = NA, conditional_R2 = NA, converged = FALSE))
   }
 
-  conv <- is.null(fit@optinfo$conv$lme4)
+  conv <- length(fit@optinfo$conv$lme4) == 0
 
   pred_train <- ifelse(predict(fit, train_dat, type = "response") > 0.5, 1, 0)
   train_acc  <- mean(pred_train == train_dat$y)
@@ -99,12 +99,12 @@ cl <- makeCluster(N_CORES)
 clusterEvalQ(cl, { library(lme4); library(performance) })
 
 results <- list()
-for (ns in N_SIGNAL_LEVELS) {
-  cat("  n_signal =", ns, "...")
-  pool <- generate_signal_data(ns, MASTER_SEED + ns)
-  clusterExport(cl, c("pool", "P_TOTAL", "N_TRAIN", "N_SUBJ", "run_one_seed"), envir = environment())
-  res <- parLapply(cl, 1:N_SEEDS, function(s) run_one_seed(s, ns, pool))
-  results[[as.character(ns)]] <- do.call(rbind, res)
+for (ns_val in N_SIGNAL_LEVELS) {
+  cat("  n_signal =", ns_val, "...")
+  pool <- generate_signal_data(ns_val, MASTER_SEED + ns_val)
+  clusterExport(cl, c("pool", "P_TOTAL", "N_TRAIN", "N_SUBJ", "run_one_seed", "ns_val"), envir = environment())
+  res <- parLapply(cl, 1:N_SEEDS, function(s) run_one_seed(s, ns_val, pool))
+  results[[as.character(ns_val)]] <- do.call(rbind, res)
   cat(" done\n")
 }
 
